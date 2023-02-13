@@ -28,7 +28,23 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         />
-
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias=".3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_search_24"
+        android:drawablePadding="9dp"
+        android:hint="Search movie"
+        android:background="@drawable/search_bg"
+        android:padding="10dp"
+        android:textColor="#a2a4b5"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_best_movie" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
