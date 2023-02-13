@@ -12,6 +12,9 @@
         android:theme="@style/Theme.APP_MOVIE_TICKET"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.HomeFullActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.ConfirmActivity"
             android:exported="false" />
         <activity
