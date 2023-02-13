@@ -3,15 +3,18 @@ package com.example.app_movie_ticket.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.app_movie_ticket.R;
 
 public class UserProFilingActivity extends AppCompatActivity {
     Button btn_horor;
+    ImageView img_next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +32,17 @@ public class UserProFilingActivity extends AppCompatActivity {
                 btn_horor.setTextColor(Color.WHITE);
             }
         });
+        img_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(UserProFilingActivity.this,ConfirmActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setControlser() {
         btn_horor=findViewById(R.id.btn_horor);
+        img_next=findViewById(R.id.img_next);
     }
 }
