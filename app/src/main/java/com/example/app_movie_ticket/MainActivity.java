@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent);
                     Log.i("hung","hung");
-                Log.i("hung","hung");
+                Log.i("hung","hungdsfs");
             }
         });
 
