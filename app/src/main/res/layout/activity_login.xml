@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgound_movie"
     tools:context=".Activity.LoginActivity">
+
     <ImageView
+        android:id="@+id/img_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/img_logo"
-        android:layout_marginTop="20dp"
-        app:layout_constraintHorizontal_bias="0.1"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textview_3"
         android:layout_width="300dp"
