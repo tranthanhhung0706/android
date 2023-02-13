@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent);
-                    Log.i("hung","hung");
-                Log.i("hung","hungddsfssfs");
             }
         });
 
