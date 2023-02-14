@@ -14,7 +14,7 @@ import com.example.app_movie_ticket.R;
 
 public class UserProFilingActivity extends AppCompatActivity {
     Button btn_horor;
-    ImageView img_back;
+    ImageView img_back,img_next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,13 @@ public class UserProFilingActivity extends AppCompatActivity {
                 btn_horor.setTextColor(Color.WHITE);
             }
         });
-
+        img_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserProFilingActivity.this, ConfirmActivity.class);
+                startActivity(intent);
+            }
+        });
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +54,7 @@ public class UserProFilingActivity extends AppCompatActivity {
 
         btn_horor=findViewById(R.id.btn_horor);
         img_back = findViewById(R.id.img_back);
+        img_next=findViewById(R.id.img_next);
 
 
     }
