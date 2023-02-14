@@ -12,5 +12,16 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+
     </style>
+
+    <style name="Theme.APP_MOVIE_TICKET.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.APP_MOVIE_TICKET.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.APP_MOVIE_TICKET.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
