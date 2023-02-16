@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.app_movie_ticket.Activity.HomeFullActivity;
 import com.example.app_movie_ticket.Activity.LoginActivity;
 import com.example.app_movie_ticket.Activity.RegisterActivity;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btn_get_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,LoginActivity.class);
+                Intent intent=new Intent(MainActivity.this, HomeFullActivity.class);
                 startActivity(intent);
             }
         });
