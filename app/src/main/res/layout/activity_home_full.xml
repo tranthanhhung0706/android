@@ -17,7 +17,7 @@
         app:queryHint="Search here ..." />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:id="@+id/list_movie_hor_rec"
         />
     <androidx.recyclerview.widget.RecyclerView

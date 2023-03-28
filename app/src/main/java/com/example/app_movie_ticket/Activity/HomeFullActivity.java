@@ -11,10 +11,13 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.app_movie_ticket.Adapter.CatogeryListAdapter;
+import com.example.app_movie_ticket.Adapter.MovieItemAdapter;
 import com.example.app_movie_ticket.Adapter.MovieListAdapter;
+import com.example.app_movie_ticket.Adapter.SheduleListAdapter;
 import com.example.app_movie_ticket.Adapter.UpdateVerticalRec;
 import com.example.app_movie_ticket.Model.Catogery;
 import com.example.app_movie_ticket.Model.Movie;
+import com.example.app_movie_ticket.Model.Shedule;
 import com.example.app_movie_ticket.R;
 
 import java.util.ArrayList;
@@ -29,6 +32,7 @@ public class HomeFullActivity extends AppCompatActivity implements UpdateVertica
     RecyclerView recyclerView2;
     List<Catogery> catogeryList;
     CatogeryListAdapter catogeryListAdapter;
+    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,14 +67,16 @@ public class HomeFullActivity extends AppCompatActivity implements UpdateVertica
 
 
     @Override
-    public void callBack(int position, ArrayList<Movie> list) {
-        movieListAdapter=new MovieListAdapter(list);
+    public void callBack(int position, List<Movie> list) {
+        movieListAdapter=new MovieListAdapter(list,getBaseContext());
         movieListAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(movieListAdapter);
+
         searchView.clearFocus();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                searchView.clearFocus();
                 return false;
             }
 

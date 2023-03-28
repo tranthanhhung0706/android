@@ -1,23 +1,55 @@
 package com.example.app_movie_ticket.Model;
 
-public class Movie {
-    private Integer image;
+
+import java.io.Serializable;
+
+public class Movie implements Serializable {
+    private Integer id;
+    private String image;
     private String name;
     private String date;
     private String catogery;
 
-    public Movie(Integer image, String name, String date, String catogery) {
+    private String description;
+
+    public Movie(Integer id, String image, String name, String date, String catogery,String description) {
+        this.id = id;
         this.image = image;
         this.name = name;
         this.date = date;
         this.catogery = catogery;
+        this.description=description;
     }
 
-    public Integer getImage() {
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        description = description;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getCatogery() {
+        return catogery;
+    }
+
+    public void setCatogery(String catogery) {
+        this.catogery = catogery;
+    }
+
+    public String getImage() {
         return image;
     }
 
-    public void setImage(Integer image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
